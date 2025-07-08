@@ -235,7 +235,7 @@ const renderLabel = ({ x, y, name, value }) => (
           <h1 className="fs-4 text-start" style={{ color: '#dc3545' }}>
             Nombre des articles critiques : <span className="fw-bold"> {criticalArticles} <hr /></span>
           </h1>
-          <h1 className="fs-4 text-start " style={{ color: '#183F7F' }}>
+          <h1 className="fs-4 text-start mb-3" style={{ color: '#183F7F' }}>
             Nombre des articles non critiques : <span className="fw-bold"> {nonCriticalArticles} <hr /></span>
           </h1>
         </>
@@ -275,7 +275,7 @@ const renderLabel = ({ x, y, name, value }) => (
 </div>
 
 {/* Dates */}
-<div className="d-flex flex-wrap gap-3 col-10 col-lg-10 mb-4 search-bar">
+<div className="d-flex flex-wrap gap-3 col-6 col-lg-10 mb-4 search-bar">
   <input
     type="date"
     className="form-control"
@@ -309,7 +309,7 @@ const renderLabel = ({ x, y, name, value }) => (
         </h4>
       ))}
     </div>
-    <h2 className='text-start' style={{ fontSize: '30px' }}>
+    <h2 className='text-start mb-5' style={{ fontSize: '30px' }}>
       Total mouvements : {totalMvm}
     </h2>
   </div>
