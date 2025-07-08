@@ -203,7 +203,7 @@ const renderLabel = ({ x, y, name, value }) => (
       </PieChart></div>
     {/* Bloc 2 - Infos */}
     <div
-      className="col-12 col-md-6 col-xl-6  col-lg-6 text-center shadow-lg p-3  mb-5 bg-white rounded"
+      className="col-10 col-md-6 col-xl-6  col-lg-6 text-center shadow-lg p-3  mb-5 bg-white rounded"
       style={{ marginLeft: '20px', height: '450px' }}
     >
       {selectedArticle ? (
@@ -296,7 +296,7 @@ const renderLabel = ({ x, y, name, value }) => (
   {/* Colonne avec les données */}
   <div
     style={{  height: '400px', paddingTop: '50px' }}
-    className="col-12 col-md-6 text-center shadow-lg p-5 bg-white rounded"
+    className="col-10 col-md-6 text-center shadow-lg p-5 mb-2 bg-white rounded"
   >
     <div className='pt-5 mt-2 text-start'>
       <h2 style={{ color: '#183F7F', fontSize: '40px' }}> Article : {reference}</h2>
