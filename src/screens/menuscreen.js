@@ -38,13 +38,24 @@ function menuscreen() {
 
   <div className="row">
     {/* Row for the third and fourth buttons */}
-   
+ 
     <div className="col-md-6">
+   {currentUser?.TYPUSR === 'admin'? (
       <Link to="/statistique" className="home-link  link-valinv">
         <span className="bi bi-bar-chart d-block icon-home"></span>
         <h5>STATISTIQUES</h5>
         <span className="bi bi-arrow-right arrow-val-inv"></span>
-      </Link>
+      </Link> ) : ( 
+ <div
+          className="list-group-item bg-light text-muted pt-4"
+          style={{ cursor: 'not-allowed', opacity: 0.6 }}
+          title="Accès réservé aux administrateurs"
+        > <span className="bi bi-bar-chart d-block icon-home"></span>
+   <h5>STATISTIQUES</h5>
+  <span className="bi bi-arrow-right arrow-val-inv"></span>
+        </div>     )}
+
+            
     </div>
     <div className="col-md-6">
       <Link to="/menuImportation" className="home-link link-expinv">
