@@ -22,6 +22,7 @@ import ListMvm from './screens/listMvm';
 const AppContent = () => {
   const location = useLocation();  
   const isLoginScreen = location.pathname === '/';
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
@@ -66,9 +67,10 @@ const AppContent = () => {
           <ProtectedRoute><ListArticles /></ProtectedRoute>} />
         <Route path='/listMvm' element={
           <ProtectedRoute><ListMvm /></ProtectedRoute>} />
+  {currentUser.TYPUSR == 'admin' &&
         <Route path='/statistique' element={
-          <ProtectedRoute><Statistique /></ProtectedRoute>}/>        
-      </Routes>     
+          <ProtectedRoute><Statistique /></ProtectedRoute>}/>  }       
+      </Routes>    
     </div>);}
 const App = () =>{
   return (
