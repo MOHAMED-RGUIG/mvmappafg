@@ -37,7 +37,37 @@ function menuscreen() {
   </div>
 
   <div className="row">
-    {/* Row for the third and fourth buttons */}
+  {/* Colonne 1 */}
+  <div className="col-md-6">
+    {currentUser?.TYPUSR === 'admin' ? (
+      <Link to="/statistique" className="home-link  link-valinv">
+        <span className="bi bi-bar-chart d-block icon-home"></span>
+        <h5>STATISTIQUES</h5>
+        <span className="bi bi-arrow-right arrow-val-inv"></span>
+      </Link>
+    ) : (
+      <div
+        className="list-group-item bg-light text-muted pt-4"
+        style={{ cursor: 'not-allowed', opacity: 0.6 }}
+        title="Accès réservé aux administrateurs"
+      >
+        <span className="bi bi-bar-chart d-block icon-home"></span>
+        <h5>STATISTIQUES</h5>
+        <span className="bi bi-arrow-right arrow-val-inv"></span>
+      </div>
+    )}
+  </div>
+
+  {/* Colonne 2 */}
+  <div className="col-md-6">
+    <Link to="/menuImportation" className="home-link link-expinv">
+      <span className="bi bi-upload d-block icon-home"></span>
+      <h5>IMPORTER <br />DES ARTICLES</h5>
+      <span className="bi bi-arrow-right arrow-export-inv"></span>
+    </Link>
+  </div>
+  {/* <div className="row">
+   
  
     <div className="col-md-6">
    {currentUser?.TYPUSR === 'admin'? (
@@ -64,7 +94,8 @@ function menuscreen() {
         <span className="bi bi-arrow-right arrow-export-inv"></span>
       </Link>
     </div>
-  </div>
+  </div>*/}
+  
 </div>
         
   )
