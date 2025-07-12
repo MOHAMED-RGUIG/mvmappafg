@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 function menuscreen() {
   return (
+const currentUser = JSON.parse(localStorage.getItem("currentUser"));
             <div className="container Body-Home">
               <div className="row">
               <div className="col-md-6">
