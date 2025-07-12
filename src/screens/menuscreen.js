@@ -95,7 +95,7 @@ function menuscreen() {
       </Link>
     </div>
   </div>*/}
-  
+  </div>
 </div>
         
   )
