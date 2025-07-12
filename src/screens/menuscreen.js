@@ -53,7 +53,7 @@ function menuscreen() {
         > <span className="bi bi-bar-chart d-block icon-home"></span>
    <h5>STATISTIQUES</h5>
   <span className="bi bi-arrow-right arrow-val-inv"></span>
-        </div>     )}
+        </div></div>     )}
 
             
     </div>
