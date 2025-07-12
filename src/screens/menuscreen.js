@@ -159,7 +159,7 @@ function menuscreen() {
             </Link>
           ) : (
             <div
-              className="list-group-item bg-light text-muted pt-4"
+              className="home-link link-valinv text-muted pt-4"
               style={{ cursor: 'not-allowed', opacity: 0.6 }}
               title="Accès réservé aux administrateurs"
             >
