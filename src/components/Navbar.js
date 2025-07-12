@@ -56,9 +56,19 @@ function Navbar() {
                 <Link to="/listMvm" className="list-group-item list-group-item-action bg-light">
                   <i className="bi bi-list-columns-reverse p-2"></i>Liste Mvm
                 </Link>
+ {currentUser?.TYPUSR === 'admin'? (
                 <Link to="/statistique" className="list-group-item list-group-item-action bg-light">
                   <i className="bi bi-bar-chart p-2"></i>Statistiques
-                </Link>
+                </Link>    ) : (
+ <div
+          className="list-group-item bg-light text-muted pt-4"
+          style={{ cursor: 'not-allowed', opacity: 0.6 }}
+          title="Accès réservé aux administrateurs"
+        >
+    <i className="bi bi-bar-chart p-2"></i>
+          Statistiques
+        </div>
+      )}
                 <Link to="/menuImportation" className="list-group-item list-group-item-action bg-light">
                   <i className="bi bi-upload p-2"></i>Importation
                 </Link>
