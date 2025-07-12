@@ -67,7 +67,7 @@ const AppContent = () => {
           <ProtectedRoute><ListArticles /></ProtectedRoute>} />
         <Route path='/listMvm' element={
           <ProtectedRoute><ListMvm /></ProtectedRoute>} />
-  {currentUser.TYPUSR == 'admin' &&
+  {currentUser.TYPUSR === 'admin' &&
         <Route path='/statistique' element={
           <ProtectedRoute><Statistique /></ProtectedRoute>}/>  }       
       </Routes>    
